@@ -49,18 +49,29 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
 - **[Lendio](https://lendio.com)**
 
-## Contributing
+## library-management-laravel-crud-app
+A Laravel 10/11 web application for managing books and categories with authentication, CRUD operations, filtering, pagination, and ownership-based authorization.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🔧 Features
+-User Authentication (Register / Login / Logout)
+-CRUD operations for Books
+-CRUD operations for Categories
+-Many-to-Many relationship between Books and Categories
+-Search, category filtering, and sorting
+-Pagination (5 items per page)
+-Ownership Policy (users can edit/delete only their own books)
+-Form validation and flash messages
 
-## Code of Conduct
+## 🛠 Tech Stack
+-Laravel 10/11
+-PHP 8.2+
+-MySQL 8
+-Blade Templates
+-Eloquent ORM
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 📚 Database Structure
+-Users → Books (1:N)
+-Books ↔ Categories (N:N) via pivot table
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Thank you for checking out this project.
+Feedback and suggestions are always welcome.
